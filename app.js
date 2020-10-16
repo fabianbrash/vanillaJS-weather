@@ -65,6 +65,7 @@ const getWeather = (latitude, longitude) => {
           weather.iconId = data.weather[0].icon;
           weather.city = data.name;
           weather.country = data.sys.country;
+          console.log(data);
       })
       .then(() => {
           displayWeather();
